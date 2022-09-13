@@ -1,0 +1,24 @@
+.red {
+  color: red;
+}
+
+a {
+  color: green;
+}
+
+#americano {
+  color: grey;
+}
+
+ul.red {
+  color: red;
+}
+
+div.green {
+  color: green;
+}
+
+.blue,
+.yellow {
+  color: blue;
+}
