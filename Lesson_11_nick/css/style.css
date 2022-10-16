@@ -1,0 +1,101 @@
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+}
+
+body {
+	background: url('../img/pexels-pixabay-63324.jpg') 0 25% / cover no-repeat;
+}
+
+
+.car {
+	width: 750px;
+	height: 500px;
+	position: fixed;
+	bottom: 0px;
+	left: 25%;
+}
+
+.car__roof {
+	width: 200px;
+	position: absolute;
+	left: 35%;
+}
+
+.car__right-wheel {
+	width: 98px;
+	position: absolute;
+	right: 123px;
+	bottom: 0;
+}
+
+.car__left-wheel {
+	width: 120px;
+	position: absolute;
+	left: 130px;
+	bottom: 0;
+}
+
+.car__bottom {
+	width: 500px;
+	position: absolute;
+	left: 17%;
+	bottom: 0px;
+	z-index: 2;
+}
+
+.car__nose {
+	width: 370px;
+	position: absolute;
+	left: 255px;
+	bottom: 157px;
+	z-index: 3;
+}
+
+.car__right-light {
+	width: 105px;
+	position: absolute;
+	right: 137px;
+	top: 245px;
+	z-index: 3;
+}
+
+.car__left-light {
+	width: 110px;
+	position: absolute;
+	left: 140px;
+	top: 250px;
+	z-index: 3;
+}
+
+.car__lid {
+	width: 424px;
+	position: absolute;
+	z-index: 4;
+	left: 165px;
+	bottom: 230px;
+}
+
+.car__roof {
+	width: 360px;
+	position: absolute;
+	z-index: 5;
+	left: 195px;
+	top: 110px;
+}
+
+.car__left-mirror {
+	width: 50px;
+	position: absolute;
+	z-index: 6;
+	left: 147px;
+	top: 170px;
+}
+
+.car__right-mirror {
+	width: 50px;
+	position: absolute;
+	z-index: 6;
+	right: 147px;
+	top: 170px;
+}
