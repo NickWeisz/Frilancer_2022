@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Lesson 23</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header"></header>
+      <main class="page">
+        <h1>Домашка №1</h1>
+        <ul>
+          <li>Вариант №1 неверный вернётся 35-22 (произошла конкатенация)</li>
+          <li>
+            Вариант №2 верный потому что оператор умножение превратит строку в
+            цифру
+          </li>
+          <li>
+            Вариант №3 неверный потому что инкремент можно использовать только с
+            переменными
+          </li>
+          <li>
+            Вариант №4 неверный вернёт 0 потому что инкремент записан в суфиксе
+          </li>
+          <li>
+            Вариант №5 неверный поскольку оператор || вернёт первое правильное
+            значение (11)
+          </li>
+          <li>
+            Вариант №6 вернёт 0 поскольку оператор ?? работает только с null и
+            undefined
+          </li>
+        </ul>
+        <h2>Домашка №2</h2>
+        <ul>
+          <li>Вариант №1 Ложь потому что 1 не строго равно "1"</li>
+          <li>Вариант №2 Истина потому что 5 == "5"</li>
+          <li>Вариант №3 Истина потому что оба операнда true</li>
+          <li>Вариант №4 Истина потому что else if true</li>
+        </ul>
+        <h2>Домашка №3</h2>
+        <ul>
+          <li>for (let i = 1; i<=5 ; i++){ console.log(i) }</li>
+          <li>Задача №2 результат 1 потому что 0 это уже fasle</li>
+          <li>
+            let num = 0; while(num < 3){ console.log(`Number ${num}`); num++; }
+          </li>
+          <li>
+            Firstfor: for (let num = 0; num < 2; num++){ for(let size = 0; size
+            < 3; size++){ console.log(size) if(size == 1){ break Firstfor } } }
+          </li>
+        </ul>
+        <h2>Домашка №4</h2>
+        <ul>
+          <li>
+            let num = 1.005 + Number.EPSILON; let newNum = Math.round(num * 100)
+            / 100; console.log(newNum);
+          </li>
+          <li>
+            let value = "135.58px"; value = parseFloat(value);
+            console.log(value);
+          </li>
+          <li>
+            let value = 58 + "frilancer"; if (isNaN(value)) {
+            console.log("результат выражения NaN"); }
+          </li>
+        </ul>
+        <h2>Домашка №5</h2>
+        <ul>
+          <li>Вариант №1 не правильный отсутствуют обратные кавычки(``)</li>
+          <li>
+            let a = "фрилансер"; console.log(a.includes("н") ? a[a.indexOf("н")]
+            : null);
+          </li>
+          <li>Вариант №3 не верный вернёт 123456</li>
+          <li>let a = "фрилансер"; console.log(a.toUpperCase());</li>
+          <li>let a = "фрилансер"; console.log(a.slice(3, 6));</li>
+          <li>Вариант №6 fasle потому что лан начинаеться с 3</li>
+        </ul>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
