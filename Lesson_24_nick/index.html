@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Lesson 24</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header"></header>
+      <main class="page">
+        <h1>Домашка №1</h1>
+        <ul>
+          <li>Вариант №1 первым выведет Коля потому что Вася с задержкой</li>
+          <li>Вариант №2 фунция вызвана верно потому что это declaration</li>
+          <li>
+            Варинат №3 невереный потому что expression мы можем вызвать только
+            после написания функции
+          </li>
+          <li>
+            Вариант №4 объявить переменную и присвоить ей функцию<br />
+            let showMessage;<br />
+            if (2 > 1) <br />{ showMessage = function () {
+            console.log("Message"); }; } <br />
+            showMessage();
+          </li>
+          <li></li>
+        </ul>
+        <h2>Домашка №2</h2>
+        <ul>
+          <li>Вариант №1 длинна масива будет 4 так как newArr = arr</li>
+          <li>
+            let arr = ["Ваня", "Иштван"];<br />
+            arr.push("Оля");<br />
+            arr[1] = "Петя";<br />
+            console.log(arr.splice(0, 1));<br />
+            arr.unshift("Маша", "Паша");<br />
+            console.log(arr);
+          </li>
+          <li>
+            let arr = ["Ваня", "Иштван", "Оля"];<br />
+            let a = arr.splice(1, 1);<br />
+            console.log(arr);<br />
+            console.log(a);<br />
+          </li>
+          <li>
+            let str = "Ваня,Иштван,Оля";<br />
+            str.split(",");
+          </li>
+          <li>Previous value равно 9 поскольку он не указан</li>
+        </ul>
+        <h2>Домашка №3</h2>
+        <ul>
+          <li>
+            const getData = document.querySelector("div");<br />
+            console.log(getData.getAttribute("data-say-hi"));
+          </li>
+          <li>const elements = document.querySelector("ul");<br>
+						const yonchiElement = elements.lastElementChild.innerHTML;<br>
+						console.log(yonchiElement);</li>
+          <li>const allLikeClass = document.querySelectorAll(".like");<br>
+						console.log(allLikeClass);</li>
+          <li>Вставит текст внутрь тега ul после всего контента</li>
+        </ul>
+        <h2>Домашка №4</h2>
+        <ul>
+          <li>let scrollWidth = div.offsetWidth - div.clientWidth (разница между Полной шириной объекта и внутренним содержимым и есть ширина скролла)</li>
+          <li>const delay = setTimeout(setScrollTo, 1000);<br>
+            function setScrollTo() {<br>
+              window.scrollTo({<br>
+                top: 100,<br>
+                left: 0,<br>
+                behavior: "smooth",<br>
+              });
+            }</li>
+          <li>const item = document.querySelector("h1");<br>
+            const getItemCoords = item.getBoundingClientRect();</li>
+        </ul>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+    <script src="js/script.js"></script>
+    </script>
+  </body>
+</html>
